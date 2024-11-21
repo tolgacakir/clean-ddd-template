@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CB735467-C1D7-4AEB-A01B-A914EF728185}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{01C5F948-5BFD-4BB3-BBEB-A70F5A3B7A15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{873AC0C3-1BB1-42C4-BAFE-C28B5B51D3F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{DDEDA86E-FAB5-42AF-B51E-3B0766B588B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Api\Api.csproj", "{619B9E4C-08BF-4C31-ADD9-4907EE3762CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01C5F948-5BFD-4BB3-BBEB-A70F5A3B7A15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01C5F948-5BFD-4BB3-BBEB-A70F5A3B7A15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01C5F948-5BFD-4BB3-BBEB-A70F5A3B7A15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01C5F948-5BFD-4BB3-BBEB-A70F5A3B7A15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{873AC0C3-1BB1-42C4-BAFE-C28B5B51D3F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{873AC0C3-1BB1-42C4-BAFE-C28B5B51D3F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{873AC0C3-1BB1-42C4-BAFE-C28B5B51D3F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{873AC0C3-1BB1-42C4-BAFE-C28B5B51D3F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDEDA86E-FAB5-42AF-B51E-3B0766B588B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDEDA86E-FAB5-42AF-B51E-3B0766B588B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDEDA86E-FAB5-42AF-B51E-3B0766B588B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDEDA86E-FAB5-42AF-B51E-3B0766B588B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{619B9E4C-08BF-4C31-ADD9-4907EE3762CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{619B9E4C-08BF-4C31-ADD9-4907EE3762CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{619B9E4C-08BF-4C31-ADD9-4907EE3762CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{619B9E4C-08BF-4C31-ADD9-4907EE3762CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

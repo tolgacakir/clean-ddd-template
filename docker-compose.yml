@@ -1,0 +1,12 @@
+﻿services:
+  api:
+    image: api
+    build:
+      context: .
+      dockerfile: Api/Dockerfile
+
+  api-1:
+    image: api-1
+    build:
+      context: .
+      dockerfile: Api/Dockerfile
