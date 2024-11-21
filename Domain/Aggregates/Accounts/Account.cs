@@ -9,26 +9,46 @@ public class Account : AggregateRoot
     public Amount Balance { get; private set; }
     public AccountStatus Status { get; private set; }
 
-    public Account(Guid ownerId)
+    public Currency Currency => Balance.Currency;
+    public decimal AbsoluteAmount => Balance.AbsoluteAmount;
+
+    public Account(Guid ownerId, Currency currency)
     {
         Id = Guid.NewGuid();
         OwnerId = ownerId;
-        Balance = Amount.Zero();
+        Balance = Amount.Zero(currency);
         Status = AccountStatus.Passive;
     }
     
     public void Deposit(Amount amount)
     {
+        if (amount.AbsoluteAmount < 0)
+        {
+            throw new InvalidOperationException("Cannot deposit negative amount");
+        }
         
+        Balance = Balance.Sum(amount);
     }
 
     public void Withdraw(Amount amount)
     {
+        if (!CanWithdraw(amount))
+        {
+            throw new InvalidOperationException("Cannot withdraw negative amount");
+        }
         
+        var amountToWithdraw = amount.Negative();
+
+        Balance = Balance.Sum(amount);
+        
+        if (Balance.AbsoluteAmount < 0)
+        {
+            throw new InvalidOperationException("Not enough.");
+        }
     }
 
-    public void CanWithdraw(Amount amount)
+    public bool CanWithdraw(Amount amount)
     {
-        
+        return Balance.GreaterThanEqual(amount);
     }
 }

@@ -1,6 +1,6 @@
 namespace Application.Common;
 
-public class ITransactionalRequest
+public interface ITransactionalRequest
 {
     
 }

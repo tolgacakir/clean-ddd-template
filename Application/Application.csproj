@@ -15,7 +15,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="UseCases\Accounts\" />
       <Folder Include="UseCases\PaymentProviders\" />
       <Folder Include="Validations\" />
     </ItemGroup>
